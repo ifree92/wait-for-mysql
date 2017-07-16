@@ -31,6 +31,6 @@ wait-for-mysql.sh [--host=localhost] [-u root] [--wait-timeout=10] [--no-wait-lo
 
 ## Examples
 
-`$ ./wait-for-mysql.sh -u root --host=mysqlhost -e "show databases;" --wait-timeout=5 && npm start`
+`$ ./wait-for-mysql.sh -u root --host=mysqlhost -e exit --wait-timeout=5 && npm start`
 
-Here we see that after success connection to DB the script will finished and the service starts.
+On this example we see that the `npm start` command will execute after mysql connection success.
